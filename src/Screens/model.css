@@ -1,0 +1,136 @@
+/* From Uiverse.io by reesaldles */
+.spinner {
+  width: 44px;
+  height: 44px;
+  animation: spinner-y0fdc1 2s infinite ease;
+  transform-style: preserve-3d;
+}
+
+.spinner > div {
+  height: 100%;
+  position: absolute;
+  width: 100%;
+  border: 2px solid #282c35;
+}
+
+.spinner div:nth-of-type(1) {
+  transform: translateZ(-22px) rotateY(180deg);
+}
+
+.spinner div:nth-of-type(2) {
+  transform: rotateY(-270deg) translateX(50%);
+  transform-origin: top right;
+}
+
+.spinner div:nth-of-type(3) {
+  transform: rotateY(270deg) translateX(-50%);
+  transform-origin: center left;
+}
+
+.spinner div:nth-of-type(4) {
+  transform: rotateX(90deg) translateY(-50%);
+  transform-origin: top center;
+}
+
+.spinner div:nth-of-type(5) {
+  transform: rotateX(-90deg) translateY(50%);
+  transform-origin: bottom center;
+}
+
+.spinner div:nth-of-type(6) {
+  transform: translateZ(22px);
+}
+
+@keyframes spinner-y0fdc1 {
+  0% {
+    transform: rotate(45deg) rotateX(-25deg) rotateY(25deg);
+  }
+
+  50% {
+    transform: rotate(45deg) rotateX(-385deg) rotateY(25deg);
+  }
+
+  100% {
+    transform: rotate(45deg) rotateX(-385deg) rotateY(385deg);
+  }
+}
+.spinner {
+  scale: 0.9;
+}
+.wrapper {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10000000000000000000000000000000000000000000000000000000;
+  background-color: white;
+}
+.wrapper *:not(p) {
+  font-family: "Artnoova", sans-serif !important;
+}
+.wrapper h1 {
+  font-size: 50px;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+.wrapper p {
+  width: 50%;
+  text-align: center;
+  margin: 30px 0 40px 0;
+  color: rgb(83, 83, 83);
+  font-size: 18px;
+}
+.wrapper button {
+  padding: 15px 40px;
+  font-size: 20px;
+  border-radius: 1000px;
+  background-color: black;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+.modelicon img {
+  width: 100px;
+  margin-bottom: 20px;
+}
+@media (max-width: 1000px) {
+  .wrapper h1,
+  .wrapper p {
+    width: 90%;
+  }
+}
+@media (max-width: 713px) {
+  .wrapper h1 {
+    font-size: 40px;
+  }
+  .wrapper p {
+    font-size: 16px;
+    margin: 20px 0 20px 0;
+  }
+}
+@media (max-width: 580px) {
+  .wrapper h1 {
+    font-size: 30px;
+  }
+  .wrapper p {
+    font-size: 14px;
+    margin: 20px 0 20px 0;
+  }
+  .wrapper button {
+    font-size: 17px;
+  }
+  .wrapper img {
+    width: 70px;
+  }
+}
+@media (max-width: 429px) {
+  .wrapper h1 {
+    width: 270px;
+  }
+}

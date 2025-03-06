@@ -1,0 +1,26 @@
+.password-reset-message-container {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: flex-start;
+}
+.password-reset-heading-style {
+  flex: 0 0 auto;
+  padding: 0;
+  margin: 0;
+  font: 600 40px/48px Artnoova;
+  color: black;
+  text-align: center;
+  white-space: pre-wrap;
+}
+.password-reset-message {
+  flex: 0 0 auto;
+  align-self: center;
+  padding: 0;
+  margin: 0;
+  margin-top: 24px;
+  font: 400 16px/22.5px Inter, sans-serif;
+  color: #666666;
+  text-align: center;
+  white-space: pre-wrap;
+}
